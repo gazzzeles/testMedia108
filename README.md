@@ -1,8 +1,4 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Я реализовал небольшую часть вашего приложения по представленному мне макету на react с сборщиком vite, так как прежде не настравивал конфигурацию webpack и готов изучать его уже по предложению мне работы.
+Из изменений верстки я мог бы предложить только при выборе квартиры по заданным параметрам подсвечивать эту квартиру
+не смог это реализовать так как не было предоставленных svg отдельных домов.
+На работу ушло около 8 часов.
