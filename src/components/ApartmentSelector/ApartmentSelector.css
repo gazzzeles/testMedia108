@@ -1,0 +1,116 @@
+.choseHome {
+  background-color: #f0f0f0;
+}
+
+.log {
+  padding-top: 120px;
+  margin-top: 0px;
+  color: #543e30;
+  font-size: 56px;
+  font-family: "Cormorant Garamond", serif;
+  margin-left: 3%;
+}
+
+.options {
+  justify-content: space-between;
+  padding: 20px;
+  display: flex;
+  align-items: end;
+  height: 700px;
+  background-image: url(https://s3-alpha-sig.figma.com/img/0b84/bd06/a65051e6adaa99d6f18137782dca8b4a?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=I1t2dwAI9MEwEpkRhXvm8XxddwPsXF-yy3rDrKpAGjCAw181rHJYkcsed3qA7iN6Q2dIprdiSmkgFh-tTRLvTWnKZ308pI72dJLGcHAjPNGf9yT9Fv~6uNEeLYqZtyQd3YfP19Quht7mDgbiKMzpHmpeYibxf2cCwBhLZ--7nPVYJ60Og9Vu0gUfnGfw3eKsjCuDRQ4Ll9aF036k7llmDkcOHKInMy9AVV-PX9PifVhP3EUvonc61zB~hkTLsIFRix9t0LXp0iulTBxPQ5BuOxb4WIZPSKvuBBMNlidHi3YPqHAfrUF8EsaOCSUZ9fI1fMSSZ6qZfeL5B49BV3rt~Q__);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(218, 185, 185);
+  background-blend-mode: multiply;
+}
+
+.price-inputs {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.price-inputs input {
+  border: 2px solid #817b7b;
+  opacity: 80%;
+  width: 30%;
+  padding: 18px;
+  padding-right: 20px;
+  margin-right: 10%;
+  border: 1px solid #ccc;
+  border-radius: 45px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.price-slider {
+  width: 85%;
+  background-color: #c29a5c;
+  accent-color: #c29a5c;
+}
+
+.butns button {
+  border-radius: 45px;
+  margin-left: 5%;
+}
+
+.lw_text {
+  font-family: "Gotham Pro", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 45px !important;
+  max-width: 30ch;
+}
+
+.bedrooms {
+  width: 30%;
+}
+
+.bedrooms button {
+  padding: 10px;
+  border: 2px solid #817b7b;
+  border-radius: 45px;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 5rem;
+  background-blend-mode: color-burn;
+  margin-bottom: 10px;
+}
+
+.plus {
+  position: relative;
+  top: 53px;
+  left: 3.2%;
+}
+
+@media (max-width: 768px) {
+  .options {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .price,
+  .bedrooms {
+    width: 100%;
+  }
+
+  .log {
+    font-size: 36px;
+    padding-top: 60px;
+  }
+
+  .lw_text {
+    font-size: 24px;
+    line-height: 36px !important;
+  }
+
+  .plus {
+    top: 53px;
+    left: 29.7%;
+    transform: translateX(-50%);
+  }
+  .bedrooms {
+    width: 110%;
+  }
+}

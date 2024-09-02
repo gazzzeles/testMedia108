@@ -1,0 +1,149 @@
+.slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+.slider {
+  min-height: 650px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-color: rgb(67, 67, 67);
+  max-width: 1486px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.slider-button {
+  padding: 10px 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  content: "";
+  box-sizing: border-box;
+  border-radius: 100%;
+  position: absolute;
+  display: block;
+  border: 1px solid #dab57b;
+  box-sizing: border-box;
+}
+
+.prev {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  position: absolute;
+  left: 3%;
+}
+
+.next {
+  position: absolute;
+  right: 3%;
+}
+
+.slider-text {
+  position: absolute;
+  bottom: -260px;
+  left: -140px;
+  color: white;
+  font-family: Cormorant Garamond;
+  font-weight: 300;
+  line-height: 20.48px;
+  font-size: 115px;
+}
+
+.slider-description {
+  position: absolute;
+  bottom: -190px;
+  right: 20px;
+  color: white;
+  max-width: 16ch;
+  color: #dab57b;
+  font-size: 36px;
+}
+
+@media (max-width: 768px) {
+  .info {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-top: 100px;
+  }
+
+  .slider-container {
+    width: 90%;
+  }
+
+  .slider {
+    width: 100%;
+  }
+
+  .slider-text {
+    bottom: -150px;
+    left: 0;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .slider-description {
+    top: 48rem;
+    right: 0;
+    font-size: 14px;
+  }
+
+  .location-bar {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .location-options button {
+    margin: 5px 0;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-in {
+  animation: slideIn 0.5s ease-out forwards;
+}
+
+@keyframes slideOut {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+}
+
+.slide-out {
+  animation: slideOut 0.5s ease-out forwards;
+}

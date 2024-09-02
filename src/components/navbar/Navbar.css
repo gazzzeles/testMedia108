@@ -1,0 +1,105 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 30px;
+  position: fixed;
+  width: 98%;
+  top: 0;
+  z-index: 1000;
+  background-image: url("https://s3-alpha-sig.figma.com/img/4885/78a8/c0e982fc69ad8a878e6d91bd2d0e3ad3?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=MG2C6LO0yriTpCHTolg6r9-z9KF~2aFtuvbR1pUpb7ZJPTlJCcmCI9OnRgT4noGGbvoZ0K4jb6vh3gJASFXOB6zXr-Qpn7fsVULTe-kabMac02pIvqDE3Ytz2uAicnSGsLpyIAjHeDLY9WA9V3y~RWVWQYMEnOWJPcUOndvOl3kf40D6A~WCA2xJmIZmDcgVVwJUJLsnLr-MzW4WrRS6vdIt~NU~HDD-E6jxEPc3ELaZ~RDalskkyELUmKdRh0KzpPq~FbIiMvMjQl7Pq2klO-Vveoc5Qx4RMXfkeIhQLRmbZhh3uxs4JgMfKPQpT3KAcOzegIvUgz7fKko-jp24sQ__");
+  background-blend-mode: multiply;
+  border-bottom: 1px solid white;
+  background-color: #543e30;
+}
+
+.navbar-logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-links button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.big-button {
+  background: linear-gradient(to top, #dab57b, #c29a5c);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 45px;
+}
+
+.navbar-phone {
+  font-size: 18px;
+}
+
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1001;
+  padding-right: 15px;
+}
+
+.burger-menu .bar {
+  width: 2rem;
+  height: 0.25rem;
+  background-color: white;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
+}
+
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    right: 7px;
+    background-image: url("https://s3-alpha-sig.figma.com/img/4885/78a8/c0e982fc69ad8a878e6d91bd2d0e3ad3?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=MG2C6LO0yriTpCHTolg6r9-z9KF~2aFtuvbR1pUpb7ZJPTlJCcmCI9OnRgT4noGGbvoZ0K4jb6vh3gJASFXOB6zXr-Qpn7fsVULTe-kabMac02pIvqDE3Ytz2uAicnSGsLpyIAjHeDLY9WA9V3y~RWVWQYMEnOWJPcUOndvOl3kf40D6A~WCA2xJmIZmDcgVVwJUJLsnLr-MzW4WrRS6vdIt~NU~HDD-E6jxEPc3ELaZ~RDalskkyELUmKdRh0KzpPq~FbIiMvMjQl7Pq2klO-Vveoc5Qx4RMXfkeIhQLRmbZhh3uxs4JgMfKPQpT3KAcOzegIvUgz7fKko-jp24sQ__");
+    background-blend-mode: multiply;
+    border-bottom: 1px solid white;
+    background-position: left;
+    background-color: #543e30;
+    padding: 20px;
+  }
+  .navbar {
+    margin-bottom: 100px;
+  }
+
+  .navbar-links.open {
+    display: flex;
+  }
+  .navbar-phone {
+    display: none;
+  }
+
+  .burger-menu {
+    display: flex;
+  }
+}
